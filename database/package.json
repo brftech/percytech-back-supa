@@ -1,0 +1,28 @@
+{
+  "name": "@percytech/database",
+  "version": "0.0.1",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --config ../../eslint.config.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "@percytech/config": "workspace:*",
+    "@percytech/utils-contact": "workspace:*",
+    "@supabase/supabase-js": "^2.54.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@vitest/coverage-v8": "^1.2.2",
+    "supabase": "^1.142.2",
+    "typescript": "^5.9.2",
+    "vitest": "^1.2.2"
+  }
+}

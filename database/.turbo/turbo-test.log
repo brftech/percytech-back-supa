@@ -1,0 +1,6 @@
+
+
+> @percytech/database@0.0.1 test /Users/bryan/Dev/percytech/packages/database
+> echo "No tests specified" && exit 0
+
+No tests specified

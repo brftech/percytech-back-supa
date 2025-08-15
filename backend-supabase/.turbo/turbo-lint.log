@@ -1,0 +1,241 @@
+
+
+> @percytech/backend@0.0.1 lint /Users/bryan/Dev/percytech/backend
+> eslint "{src,apps,libs,test}/**/*.ts" --fix
+
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <4.5.0
+
+YOUR TYPESCRIPT VERSION: 4.9.5
+
+Please only submit bug reports when using the officially supported version.
+
+=============
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/app.controller.spec.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/app.controller.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'Controller' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:22[22m  [31merror[39m  'Get' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m5:14[22m  [31merror[39m  'AppController' is defined but never used                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/app.module.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m  'Module' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m2:10[22m  [31merror[39m  'ConfigModule' is defined but never used                             [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m3:10[22m  [31merror[39m  'AppController' is defined but never used                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:10[22m  [31merror[39m  'AppService' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:10[22m  [31merror[39m  'SupabaseService' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m8:10[22m  [31merror[39m  'TCRApiService' is defined but never used                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m9:10[22m  [31merror[39m  'UserService' is defined but never used                              [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m10:10[22m  [31merror[39m  'BrandService' is defined but never used                             [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m11:10[22m  [31merror[39m  'CampaignService' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m12:10[22m  [31merror[39m  'HubSpotService' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m13:10[22m  [31merror[39m  'LeadService' is defined but never used                              [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m16:10[22m  [31merror[39m  'UserController' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m17:10[22m  [31merror[39m  'BrandController' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m18:10[22m  [31merror[39m  'CampaignController' is defined but never used                       [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m19:10[22m  [31merror[39m  'LeadController' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m46:14[22m  [31merror[39m  'AppModule' is defined but never used                                [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/app.service.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m4:14[22m  [31merror[39m  'AppService' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/controllers/brand.controller.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m2:3[22m   [31merror[39m    'Controller' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m3:3[22m   [31merror[39m    'Get' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:3[22m   [31merror[39m    'Post' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m5:3[22m   [31merror[39m    'Put' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m6:3[22m   [31merror[39m    'Delete' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:3[22m   [31merror[39m    'Body' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m8:3[22m   [31merror[39m    'Param' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m9:3[22m   [31merror[39m    'Query' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m10:3[22m   [31merror[39m    'HttpCode' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m11:3[22m   [31merror[39m    'HttpStatus' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m17:14[22m  [31merror[39m    'BrandController' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m67:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m76:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/controllers/campaign.controller.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m2:3[22m   [31merror[39m    'Controller' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m3:3[22m   [31merror[39m    'Get' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:3[22m   [31merror[39m    'Post' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m5:3[22m   [31merror[39m    'Put' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m6:3[22m   [31merror[39m    'Delete' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:3[22m   [31merror[39m    'Body' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m8:3[22m   [31merror[39m    'Param' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m9:3[22m   [31merror[39m    'Query' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m10:3[22m   [31merror[39m    'HttpCode' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m11:3[22m   [31merror[39m    'HttpStatus' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m17:14[22m  [31merror[39m    'CampaignController' is defined but never used                       [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m78:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m87:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/controllers/index.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/controllers/lead.controller.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m2:3[22m   [31merror[39m  'Controller' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m3:3[22m   [31merror[39m  'Get' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:3[22m   [31merror[39m  'Post' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m5:3[22m   [31merror[39m  'Put' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m6:3[22m   [31merror[39m  'Body' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:3[22m   [31merror[39m  'Param' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m8:3[22m   [31merror[39m  'Query' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m9:3[22m   [31merror[39m  'ValidationPipe' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m19:14[22m  [31merror[39m  'LeadController' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/controllers/user.controller.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m2:3[22m   [31merror[39m  'Controller' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m3:3[22m   [31merror[39m  'Get' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:3[22m   [31merror[39m  'Post' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m5:3[22m   [31merror[39m  'Put' is defined but never used                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m6:3[22m   [31merror[39m  'Delete' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:3[22m   [31merror[39m  'Body' is defined but never used                                     [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m8:3[22m   [31merror[39m  'Param' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m9:3[22m   [31merror[39m  'Query' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m10:3[22m   [31merror[39m  'HttpCode' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m11:3[22m   [31merror[39m  'HttpStatus' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m17:14[22m  [31merror[39m  'UserController' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/brand.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:32[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:40[22m  [31merror[39m  'IsUrl' is defined but never used                                    [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/campaign.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:32[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/index.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/lead-activity.entity.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m    'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m1:20[22m  [31merror[39m    'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m1:28[22m  [31merror[39m    'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m1:40[22m  [31merror[39m    'IsDateString' is defined but never used                             [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m74:29[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/lead.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsEmail' is defined but never used                                  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:19[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:31[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:41[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/onboarding.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsBoolean' is defined but never used                                [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:31[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:39[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/payment.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsNumber' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:30[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:38[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/profile.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/tcr-registration.entity.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:20[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m1:32[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/entities/user.entity.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m2:3[22m  [31merror[39m  'IsEmail' is defined but never used                                  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m3:3[22m  [31merror[39m  'IsString' is defined but never used                                 [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m4:3[22m  [31merror[39m  'IsOptional' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m5:3[22m  [31merror[39m  'IsEnum' is defined but never used                                   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m6:3[22m  [31merror[39m  'IsDateString' is defined but never used                             [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/main.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/brand.service.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m    'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m7:14[22m  [31merror[39m    'BrandService' is defined but never used                             [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m69:71[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m94:72[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/campaign.service.ts[24m[0m
+[0m    [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m    [2m1:10[22m  [31merror[39m    'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m    [2m7:14[22m  [31merror[39m    'CampaignService' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m96:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m127:14[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/hubspot.service.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m  'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m38:14[22m  [31merror[39m  'HubSpotService' is defined but never used                           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/index.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/lead.service.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m    'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m41:29[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m45:14[22m  [31merror[39m    'LeadService' is defined but never used                              [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/supabase.service.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m6:14[22m  [31merror[39m  'SupabaseService' is defined but never used                          [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/tcr-api.service.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m    Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m   [2m1:10[22m  [31merror[39m    'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m41:10[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m45:14[22m  [31merror[39m    'TCRApiService' is defined but never used                            [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m73:11[22m  [33mwarning[39m  Unexpected any. Specify a different type                             [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/user.service.spec.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/src/services/user.service.ts[24m[0m
+[0m  [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m1:10[22m  [31merror[39m  'Injectable' is defined but never used                               [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m6:14[22m  [31merror[39m  'UserService' is defined but never used                              [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/test/app.e2e-spec.ts[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found  [2m@typescript-eslint/prefer-const[22m[0m
+[0m[0m
+[0m[4m/Users/bryan/Dev/percytech/backend/test/jest.setup.ts[24m[0m
+[0m   [2m1:1[22m   [31merror[39m  Definition for rule '@typescript-eslint/prefer-const' was not found              [2m@typescript-eslint/prefer-const[22m[0m
+[0m  [2m10:55[22m  [31merror[39m  Unexpected empty arrow function                                                  [2m@typescript-eslint/no-empty-function[22m[0m
+[0m  [2m11:56[22m  [31merror[39m  Unexpected empty arrow function                                                  [2m@typescript-eslint/no-empty-function[22m[0m
+[0m  [2m12:57[22m  [31merror[39m  Unexpected empty arrow function                                                  [2m@typescript-eslint/no-empty-function[22m[0m
+[0m  [2m90:3[22m   [31merror[39m  ES2015 module syntax is preferred over custom TypeScript modules and namespaces  [2m@typescript-eslint/no-namespace[22m[0m
+[0m[0m
+[0m[31m[1m✖ 157 problems (145 errors, 12 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

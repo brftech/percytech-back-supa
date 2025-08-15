@@ -1,0 +1,5 @@
+
+
+> @percytech/database@0.0.1 typecheck /Users/bryan/Dev/percytech-front/packages/database
+> tsc --noEmit
+
