@@ -184,7 +184,6 @@ show_dev_environment() {
     
     # Available ports
     echo "   🔌 Port Status:"
-    check_port 3000  # Frontend
     check_port 3001  # Backend
     check_port 3002  # Alternative backend
 }
@@ -194,44 +193,18 @@ show_package_status() {
     print_section "Package Health Status"
     
     # Backend
-    if check_package_health "Backend" "$ROOT_DIR/backend"; then
+    if check_package_health "Backend" "$ROOT_DIR/backend-supabase"; then
         backend_healthy=true
     else
         backend_healthy=false
     fi
     
-    # Admin app
-    if check_package_health "Admin App" "$ROOT_DIR/apps/admin"; then
-        admin_healthy=true
+    # Database utilities
+    if check_package_health "Database" "$ROOT_DIR/database"; then
+        database_healthy=true
     else
-        admin_healthy=false
+        database_healthy=false
     fi
-    
-    # Texting app
-    if check_package_health "Texting App" "$ROOT_DIR/apps/texting"; then
-        texting_healthy=true
-    else
-        texting_healthy=false
-    fi
-    
-    # Web app
-    if check_package_health "Web App" "$ROOT_DIR/apps/web"; then
-        web_healthy=true
-    else
-        web_healthy=false
-    fi
-    
-    # Shared packages
-    echo "   📚 Shared Packages:"
-    for package in auth config database layouts tokens types ui utils-contact; do
-        if [ -d "$ROOT_DIR/packages/$package" ]; then
-            if check_package_health "$package" "$ROOT_DIR/packages/$package"; then
-                echo "      ✅ $package"
-            else
-                echo "      ❌ $package"
-            fi
-        fi
-    done
 }
 
 # Function to show service status
@@ -241,10 +214,9 @@ show_service_status() {
     # Backend API
     check_service_status "Backend API" 3001 "/api"
     
-    # Frontend apps
-    check_service_status "Admin Frontend" 3000 "/"
-    check_service_status "Texting Frontend" 3000 "/"
-    check_service_status "Web Frontend" 3000 "/"
+    # Supabase
+    check_service_status "Supabase Studio" 54323 "/"
+    check_service_status "Supabase API" 54321 "/"
 }
 
 # Function to show recommendations
@@ -255,12 +227,12 @@ show_recommendations() {
     
     # Check if backend is running
     if ! lsof -Pi :3001 -sTCP:LISTEN -t >/dev/null 2>&1; then
-        echo "   🚀 Start backend: pnpm run dev:backend"
+        echo "   🚀 Start backend: cd backend-supabase && npm run dev"
     fi
     
-    # Check if frontend is running
-    if ! lsof -Pi :3000 -sTCP:LISTEN -t >/dev/null 2>&1; then
-        echo "   🌐 Start frontend: pnpm run dev:admin (or other apps)"
+    # Check if Supabase is running
+    if ! lsof -Pi :54321 -sTCP:LISTEN -t >/dev/null 2>&1; then
+        echo "   🗄️  Start Supabase: supabase start"
     fi
     
     # Check for uncommitted changes
@@ -269,13 +241,13 @@ show_recommendations() {
     fi
     
     # Check for dependency issues
-    if ! pnpm list --depth=0 >/dev/null 2>&1; then
-        echo "   📦 Install dependencies: pnpm install"
+    if ! cd backend-supabase && npm list --depth=0 >/dev/null 2>&1; then
+        echo "   📦 Install dependencies: cd backend-supabase && npm install"
     fi
     
     # Check for build issues
-    if [ "$backend_healthy" = false ] || [ "$admin_healthy" = false ] || [ "$texting_healthy" = false ] || [ "$web_healthy" = false ]; then
-        echo "   🔧 Fix build issues: pnpm run build"
+    if [ "$backend_healthy" = false ] || [ "$database_healthy" = false ]; then
+        echo "   🔧 Fix build issues: cd backend-supabase && npm run build"
     fi
 }
 

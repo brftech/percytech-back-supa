@@ -249,7 +249,7 @@ show_status() {
     
     echo
     echo "🎯 Available Targets:"
-    echo "   backend, admin, texting, web, all"
+    echo "   backend, database, all"
 }
 
 # Function to show help
@@ -271,14 +271,12 @@ show_help() {
     echo
     echo "Targets:"
     echo "  backend          Backend NestJS server"
-    echo "  admin            Admin frontend app"
-    echo "  texting          Texting frontend app"
-    echo "  web              Web frontend app"
+    echo "  database         Database utilities"
     echo "  all              All packages (default)"
     echo
     echo "Examples:"
     echo "  $0 dev backend   # Start only backend"
-    echo "  $0 test backend  # Test only backend"
+    echo "  $0 test database # Test only database utilities"
     echo "  $0 validate      # Run full validation"
 }
 

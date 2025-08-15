@@ -21,10 +21,10 @@ The Lead Management System is a comprehensive solution for managing marketing le
 - `LeadController` - REST API endpoints
 - `Lead` & `LeadActivity` entities - Data models
 
-#### **Frontend**
+#### **Client Integration**
 
 - `ContactForm` - Updated to use lead management API
-- `leadApi` service - Frontend API client
+- `leadApi` service - Client API client
 - Integrated across all marketing pages
 
 ## 🚀 Quick Start
@@ -167,7 +167,7 @@ interface LeadActivity {
 - `lifecyclestage` ← `lead`
 - `lead_status` ← `new`
 
-## 🎨 Frontend Integration
+## 🎨 Client Integration
 
 ### **Contact Form Updates**
 
@@ -206,7 +206,7 @@ const stats = await leadApi.getLeadStats();
 ### **Adding New Lead Sources**
 
 1. Add new enum value to `LeadSource` in `lead.entity.ts`
-2. Update the frontend to pass the correct source
+2. Update the client to pass the correct source
 3. The backend will automatically handle the new source
 
 ### **Customizing HubSpot Sync**

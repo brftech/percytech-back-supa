@@ -15,20 +15,22 @@ Shared database types, schemas, and query helpers for the PercyTech platform.
 ### Basic Client Usage
 
 ```typescript
-import { getSupabaseClient, createQueries } from '@percytech/database';
+import { getSupabaseClient, createQueries } from "@percytech/database";
 
-// Get client (browser/frontend)
+// Get client (browser/client-side)
 const supabase = getSupabaseClient();
 const queries = createQueries(supabase);
 
 // Get profile with customer data
-const { profile, customer } = await queries.profiles.getWithCustomerData(userId);
+const { profile, customer } = await queries.profiles.getWithCustomerData(
+  userId
+);
 ```
 
 ### Service Client Usage (Backend Only)
 
 ```typescript
-import { getSupabaseServiceClient, createQueries } from '@percytech/database';
+import { getSupabaseServiceClient, createQueries } from "@percytech/database";
 
 // Get service client (bypasses RLS)
 const supabase = getSupabaseServiceClient();
@@ -36,21 +38,24 @@ const queries = createQueries(supabase);
 
 // Create a lead
 const lead = await queries.leads.create({
-  email: 'user@example.com',
-  platform_interest: 'gnymble',
+  email: "user@example.com",
+  platform_interest: "gnymble",
 });
 ```
 
 ### Edge Function Usage
 
 ```typescript
-import { createSupabaseServiceEdgeClient, createQueries } from '@percytech/database';
+import {
+  createSupabaseServiceEdgeClient,
+  createQueries,
+} from "@percytech/database";
 
 // In your Edge Function
 export default async (req: Request) => {
   const supabase = createSupabaseServiceEdgeClient();
   const queries = createQueries(supabase);
-  
+
   // Use queries...
 };
 ```
@@ -58,10 +63,10 @@ export default async (req: Request) => {
 ### Type Validation
 
 ```typescript
-import { LeadSchema, type Lead } from '@percytech/database';
+import { LeadSchema, type Lead } from "@percytech/database";
 
 // Validate data from API
-const rawData = await fetch('/api/lead');
+const rawData = await fetch("/api/lead");
 const validatedLead = LeadSchema.parse(await rawData.json());
 
 // Type-safe operations
@@ -75,12 +80,14 @@ function processLead(lead: Lead) {
 ## Query Helpers
 
 ### Profiles
+
 - `getById(id)` - Get profile by ID
 - `getByEmail(email)` - Get profile by email
 - `getWithCustomerData(id)` - Get profile with customer and subscriptions
 - `update(id, updates)` - Update profile
 
 ### Leads
+
 - `create(data)` - Create new lead
 - `findByContact(email?, phone?)` - Find lead by email or phone
 - `updateWithActivity(id, updates, activity)` - Update lead and log activity
@@ -88,6 +95,7 @@ function processLead(lead: Lead) {
 - `getRecentWithActivity(days)` - Get recent leads with activity count
 
 ### Campaigns
+
 - `getWithPhoneNumbers(id)` - Get campaign with assigned phone numbers
 - `getActiveByCustomer(customerId)` - Get active campaigns for customer
 - `createWithAudit(data, actorId)` - Create campaign with audit log
@@ -95,6 +103,7 @@ function processLead(lead: Lead) {
 - `canCreateCampaign(customerId)` - Check campaign creation limit
 
 ### Messages
+
 - `createOutbound(data)` - Send a message (with consent check)
 - `getConversation(conversationId)` - Get conversation thread
 - `getRecentByCustomer(customerId)` - Get recent messages
@@ -106,7 +115,7 @@ function processLead(lead: Lead) {
 Required environment variables:
 
 ```bash
-# For browser/frontend
+# For browser/client-side
 NEXT_PUBLIC_SUPABASE_URL=your-project-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 

@@ -74,15 +74,15 @@ npm run dev
 
 ## Integration
 
-This service integrates with `percytech-back-aws` for:
+This service integrates with external services for:
 
-- User authentication (provides JWT tokens)
+- User authentication (Supabase Auth with JWT tokens)
 - User data synchronization
 - Cross-service communication
 
 ## Development
 
-- **Port**: 3000 (configurable)
+- **Backend Port**: 3001 (configurable)
 - **Supabase API**: Port 54321
 - **Supabase Studio**: Port 54323
 - **Database**: Port 54322
