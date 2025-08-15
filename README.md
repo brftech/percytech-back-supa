@@ -23,7 +23,6 @@ Admin platform and onboarding system built with NestJS and Supabase. Handles use
 ### Installation
 
 ```bash
-cd backend-supabase
 npm install
 ```
 

@@ -193,7 +193,7 @@ show_package_status() {
     print_section "Package Health Status"
     
     # Backend
-    if check_package_health "Backend" "$ROOT_DIR/backend-supabase"; then
+    if check_package_health "Backend" "$ROOT_DIR"; then
         backend_healthy=true
     else
         backend_healthy=false
@@ -227,7 +227,7 @@ show_recommendations() {
     
     # Check if backend is running
     if ! lsof -Pi :3001 -sTCP:LISTEN -t >/dev/null 2>&1; then
-        echo "   🚀 Start backend: cd backend-supabase && npm run dev"
+        echo "   🚀 Start backend: npm run dev"
     fi
     
     # Check if Supabase is running
@@ -241,13 +241,13 @@ show_recommendations() {
     fi
     
     # Check for dependency issues
-    if ! cd backend-supabase && npm list --depth=0 >/dev/null 2>&1; then
-        echo "   📦 Install dependencies: cd backend-supabase && npm install"
+    if ! npm list --depth=0 >/dev/null 2>&1; then
+        echo "   📦 Install dependencies: npm install"
     fi
     
     # Check for build issues
     if [ "$backend_healthy" = false ] || [ "$database_healthy" = false ]; then
-        echo "   🔧 Fix build issues: cd backend-supabase && npm run build"
+        echo "   🔧 Fix build issues: npm run build"
     fi
 }
 
