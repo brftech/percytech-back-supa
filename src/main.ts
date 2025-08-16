@@ -7,12 +7,14 @@ async function bootstrap() {
 
   // Enable CORS with multiple origins
   const allowedOrigins = [
-    "http://localhost:3000",
-    "http://localhost:5173", // Admin app
-    "http://localhost:5174", // Other potential dev ports
-    "http://localhost:3001", // Backend itself
-  ];
+    "http://localhost:3000", // Marekting Sites
+    "http://localhost:5173", // Admin Experience
+    "http://localhost:5174", // User Experience
+    "http://localhost:5175", // Texting UI
 
+    "http://localhost:3001", // Backend (Nest/Vercel/Supabase)
+    "http://localhost:3002", // Backend (Nest/AWS/RDS)
+  ];
   // Add environment variable origins if specified
   if (process.env.CORS_ORIGIN) {
     const envOrigins = process.env.CORS_ORIGIN.split(",").map((origin) =>
